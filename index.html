@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vbhi-Portfolio</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      /* Add CSS for the hover effect */
+      .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            transition: transform 0.5s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .hi {
+            position: relative;
+            background-color: #e280e2a8; 
+            color: #f3eded; 
+            padding: 50px;
+        }
+
+        .navbar {
+            background-color: #3818a1; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #8d71ba !important; /* Text color for nav links */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #bd7c7c; /* Color of the mobile menu icon */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .container h1 {
+            color: #71cda5; /* Header text color */
+        }
+
+        .container p {
+            background-color: #333; /* Text background color */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .container img {
+            width: 350px;
+            border-radius: 10%;
+        }
+        .navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline as needed */
+    bottom: 0;
+    left: 0;
+    background-color: #a6b3c2; /* Adjust the color as needed */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out; /* Adjust the transition speed as needed */
+}
+
+.navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+    </style>
+   <link rel="stylesheet" href="s.css">
+  </head>
+<body>
+  <div class="hi">
+    <video src="bg.mp4" autoplay loop muted plays-inline></video>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="z-index: 10; background: transparent;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./About.html">About </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Experience.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Experience 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Experience.html">Microsoft </a></li>
+                  <li><a class="dropdown-item" href="Experience.html">Google</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Experience.html">Internship</a></li>
+                </ul>
+              </li>
+
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Skill.html">Skills</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contact</a>
+           </ul>    
+          </div>
+        </div>
+      </nav>
+ 
+      <div class="container mt-5" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container" >
+                    <img src="WhatsApp Image 2024-03-26 at 23.00.04_2614a75c.jpg" alt="harsh dhandha" class="img-fluid" style="width: 350px;  border-radius: 10%;">
+                </div>
+            </div>
+            <div class="col-md-6" style="z-index: 10; padding: 10px; color: antiquewhite; background-color: black; opacity:70%; border-radius: 5%; margin-bottom:00px;">
+                <h1>VAIBHAVI MACHCHHAR</h1>
+                <p class="container mt-10"> 
+                  <h4>
+                "I'm a coding enthusiast with a knack for smart solutions in this world of technology, always eager to collaborate and engage. </br>
+                Beyond the screen, I'm a fan of cricket, with a soft spot for dance.</br>
+               When I'm not coding, I call myself a chef.
+              </h4></p>
+            </div>
+        </div>
+    </div>
+  </div>
+ 
+</body>
+</html>
